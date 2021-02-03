@@ -1,23 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
 	MDBCol,
 	MDBContainer,
 	MDBRow,
 	MDBFooter
 } from "mdbreact";
+import axios from 'axios';
 
 import './Footer.css';
 
 const Footer = () => {
+	const [socialNet, setSocialNet] = useState([]);
 
-	const socialNetwork = 
-			<div>
-				<i className="fa fa-home mr-3" /> FBimg
-				<i className="fa fa-phone mr-3" /> TTimg
-				<i className="fa fa-phone mr-3" /> VMimg
-				<i className="fa fa-phone mr-3" /> FLKRimg
-				<i className="fa fa-phone mr-3" /> FLKRimgRSSimg
-		</div>;
+	useEffect(() => {
+		const url = 'http://localhost:5000/social-networks';
+		axios
+		.get(url)
+		.then((res) => setSocialNet(res.data))
+		.catch((err) => console.log(err))
+	}, []);
+
+	const socialNetwork = socialNet.map(x => {
+		return (
+			<img src={x.rs_img} alt={x.rs_name} />
+		)
+	})
 	
   return (
 		<MDBFooter color="mdb-color" className="font-small pt-4 mt-4">
