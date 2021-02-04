@@ -1,0 +1,20 @@
+footer.page-footer.mdb-color.font-small.pt-4.mt-4 {
+  background-color: #f8f9fa;
+}
+
+.text-uppercase.mb-4.font-weight-bold {
+  color: rgba(0,0,0,.5);
+}
+
+.footer_para {
+  color: rgba(0,0,0,.5);
+}
+
+.footer_text {
+  color: rgba(0,0,0,.5);
+}
+
+.mx-auto.mt-3>img {
+  width: 39px;
+  margin: 5px;
+}

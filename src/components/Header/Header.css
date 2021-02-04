@@ -1,0 +1,13 @@
+.mr-auto, .mx-auto {
+  margin-left: auto!important;
+}
+
+nav.navbar.navbar-expand-md.navbar-light.bg-light>img {
+  margin-left: 55px !important;
+  width: 200px !important;
+}
+
+a.nav-link {
+  margin-right: 20px;
+  margin-left: 20px;
+}
