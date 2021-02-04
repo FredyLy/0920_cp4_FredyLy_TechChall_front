@@ -1,0 +1,37 @@
+#banniere_hero {
+	background: url('../../images/banniere_hero.jpeg');
+	background-size: cover;
+	border-radius: 5px;
+}
+
+#about {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#about p {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#flexbox_my_family {
+	display: flex;
+	justify-content: space-around;
+}
+
+#flexbox_my_family img {
+	border: 1px solid #181818;
+	margin-bottom: 10px;
+	width: 200px;
+	height: 280px;
+}
+
+figcaption {
+	font-size: 0.8em;
+	text-align: center;
+}
+
+#flexbox_my_family + p {
+	text-align: center;
+}

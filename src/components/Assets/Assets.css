@@ -1,0 +1,74 @@
+#banniere_assets {
+	background: url('../../images/banniere_assets.jpg') center;
+	background-size: cover;
+	border-radius: 5px;
+}
+
+#assets {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#assets p {
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+#inventory {
+	background: url('../../images/paper_style.jpg');
+	background-size: 100% 100%;
+	padding: 0 50px 80px 50px;
+	margin: 0 120px 0 120px;
+}
+
+caption {
+  caption-side: top;
+  color: black;
+  text-align: center;
+}
+
+caption>h3 {
+  margin-top: 20px;
+}
+
+table {
+	font-family: 'Dancing Script', arial, sans-serif;
+	font-size: 1.3em;
+	text-align: center;
+	table-layout: fixed;
+	width: 100%;
+}
+
+thead th:nth-child(1) {
+	width: 30%;
+}
+
+thead th:nth-child(2) {
+	width: 35%;
+}
+
+thead th:nth-child(3) {
+	width: 35%;
+}
+
+table h3 {
+	font-size: 2em;
+}
+
+th {
+	font-size: 1.3em;
+	text-decoration: underline;
+	padding: 15px;
+}
+
+td {
+	padding: 3px;
+}
+
+@media screen and (min-width: 375px) {
+	#inventory {
+    margin: 0;
+    padding: 0 10px 80px 10px;;
+	}
+}
